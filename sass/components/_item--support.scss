@@ -1,0 +1,15 @@
+.item--support{
+    &__icon{
+        font-size: 40px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1279px){
+    .item--support{
+        &__icon{
+            font-size: 24px;
+            margin: 16px;
+        }
+    }
+}

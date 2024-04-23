@@ -1,0 +1,9 @@
+.logo{
+    &:before {
+        content: '\e357';
+        width: 26px;
+        height: 26px;
+        left: 7px;
+        top: 7px;
+    }
+}

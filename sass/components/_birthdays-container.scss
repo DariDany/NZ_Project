@@ -1,0 +1,17 @@
+.birthdays-container{
+    &__birthday{
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 0 18px;
+        align-items: center;
+        flex-grow: 1;
+    }
+}
+@media (max-width: 719px){
+    .birthdays-container{
+        &__birthday{
+            width:auto;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.footer {
+  max-height: 504px;
+  background: radial-gradient(44.37% 134.28% at 103.79% 132.01%, rgba(4, 198, 93, 0.5) 0%, rgba(4, 198, 93, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(51.52% 197.3% at -15.5% -46.34%, rgba(255, 140, 140, 0.8) 8.33%, rgba(164, 164, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(81.13deg, #1A76FF -22.71%, #FFEA96 101.06%);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0 40px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  padding-left: 40px;
+
+  &__text--heading{
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+  }
+  &__qr{
+    box-sizing: border-box;
+    min-height: 152px;
+  }
+  &__bd{
+    max-width: 648px;
+  }
+  &__birthdays-container{
+    margin-top: 32px;
+    max-width: 610px;
+    display: grid;
+    grid-template-columns: repeat(2, 304px);
+    grid-template-rows: repeat(3, 24px);
+    gap: 16px 40px;
+  }
+  &__icons-box{
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 16px;
+  }
+  &__text--info{
+    min-width: 303px;
+    min-height: 48px;
+    padding-bottom: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &__download-container{
+    min-width: 272px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 16px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1279px){
+  .footer{
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    &__qr{
+      display: none;
+    }
+    &__icons-box{
+      margin-top: 56px;
+    }
+  }
+}
+@media (max-width: 719px){
+  .footer{
+    padding-top: 56px;
+    padding-left: 20px;
+    min-width: 395px;
+
+    &__qr{
+      display: none;
+    }
+    &__birthdays-container{
+      grid-template-columns: 272px;
+      gap: 16px 18px;
+    }
+    &__birthdays-container > :nth-child(2n){
+      display: none;
+    }
+    &__icons-box{
+      margin-top: 40px;
+    }
+  }
+}

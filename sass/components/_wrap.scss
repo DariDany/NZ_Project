@@ -1,0 +1,19 @@
+.wrap{
+    position: relative;
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+@media (min-width: 720px) and (max-width: 1279px){
+    .wrap{
+        max-width: 1279px;
+    }
+}
+@media (max-width: 719px){
+    .wrap{
+        max-width: 719px;
+        width: 100vw;
+        padding: 0;
+    }
+}

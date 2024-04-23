@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(../../fonts/e-Ukraine/e-Ukraine.eot);
+  src: url(../../fonts/e-Ukraine/e-Ukraine.eot?#iefix)
+      format('embedded-opentype'),
+    url(../../fonts/e-Ukraine/e-Ukraine.otf) format('otf'),
+    url(../../fonts/e-Ukraine/e-Ukraine.ttf) format('truetype'),
+    url(../../fonts/e-Ukraine/e-Ukraine.svg#e-Ukraine) format('svg'),
+    url(../../fonts/e-Ukraine/e-Ukraine.woff2) format('woff2'),
+    url(../../fonts/e-Ukraine/e-Ukraine.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-height: 100%;
+  max-width: 100vw;
+  padding: 0;
+  font-family: $e-Ukraine;
+  color: $text;
+
+}
+
+img {
+  vertical-align: middle;
+}
+
+::selection {
+  background-color: $black;
+  color: $white;
+}

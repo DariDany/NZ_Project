@@ -1,0 +1,33 @@
+.curr-semestr{
+    &__date-container{
+        width: 294px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+        border-bottom: 3px solid #000000;
+    }
+    &__icon{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1279px){
+    .curr-semestr{
+        &__sem{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 719px){
+    .curr-semestr{
+        &__date-container a span{
+            display: none;
+        }
+        &__sem{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.header {
+  position: relative;
+  color: rgba($white, 0.5);
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 0 24px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: radial-gradient(49.5% 821.88% at 9.91% -190.28%, rgba(255, 140, 140, 0.8) 8.33%, rgba(164, 164, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(80.68deg, #1A76FF -51.09%, #FFEA96 110.03%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__curr-semestr {
+    width: 386px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #090E36;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+  }
+
+  &__user {
+    width: 188px;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: auto;
+    color: #090E36;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__language-container {
+    font-size: 13px;
+    line-height: 24px;
+    color: #090E36;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+  }
+
+  &__menu {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin: auto;
+    border-radius: 13px;
+    background: black;
+    display: none;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1279px){
+  .header{
+    &__user{
+      width: 32px;
+    }
+    &__menu{
+      display:block;
+    }
+    &__language-container{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 719px){
+  .header{
+    padding: 16px 20px;
+    min-width: 375px;
+  &__logo{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #000000;
+    border-radius: 12px;
+  }
+  &__curr-semestr{
+    padding: 0 10px;
+    margin:auto;
+    max-width: 193px;
+  }
+  &__user{
+    width: 32px;
+    padding-right: 10px;
+  }
+  &__menu{
+    display:block;
+  }
+  &__language-container{
+    display: none;
+  }
+}
+}

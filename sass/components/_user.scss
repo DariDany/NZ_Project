@@ -1,0 +1,30 @@
+.user{
+    &__pic{
+        width: 32px;
+        height: 32px; 
+        &--round{
+            border-radius: 13px;
+        }   
+    }
+    &__name{
+        width: 132px;
+        height: 24px;
+        margin-left: 24px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1279px){
+    .user{
+        &__name{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 719px){
+    .user{
+        &__name{
+            display: none;
+        }
+    }
+}

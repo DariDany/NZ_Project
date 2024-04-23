@@ -1,0 +1,157 @@
+footer {
+    max-height: 504px;
+    background: radial-gradient(44.37% 134.28% at 103.79% 132.01%, rgba(4, 198, 93, 0.5) 0%, rgba(4, 198, 93, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(51.52% 197.3% at -15.5% -46.34%, rgba(255, 140, 140, 0.8) 8.33%, rgba(164, 164, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(81.13deg, #1A76FF -22.71%, #FFEA96 101.06%);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0 40px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    padding-left: 40px;
+}
+.footer__text--heading{
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+.footer__qr{
+    box-sizing: border-box;
+    min-height: 152px;
+}
+.qr__qr-container{
+    min-width: 279px;
+    min-height: 80px;
+    margin-top: 32px;
+    box-sizing: border-box;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 16px;
+}
+.qr-container__icon{
+    margin-left: 20px;
+}
+.qr-container__text-box{
+    width: 172px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+}
+.text-box__item{
+    width: 172px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 8px;
+}
+.footer__bd{
+    max-width: 648px;
+}
+.footer__birthdays-container{
+    margin-top: 32px;
+    max-width: 610px;
+    display: grid;
+    grid-template-columns: repeat(2, 304px);
+    grid-template-rows: repeat(3, 24px);
+    gap: 16px 40px;
+}
+.birthdays-container__birthday{
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 0 18px;
+    align-items: center;
+    flex-grow: 1;
+}
+.birthday__date{
+    min-height: 20px;
+    background: #000000;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2px 8px;
+    flex-shrink: 1;
+}
+.birthday__name{
+    max-width: 234px;
+    min-height: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.footer__icons-box{
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 16px;
+}
+.icons-box__icon{
+    height: 40px; 
+}
+.footer__text--info{
+    min-width: 303px;
+    min-height: 48px;
+    padding-bottom: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+.footer__download-container{
+    min-width: 272px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 16px;
+}
+@media (min-width: 720px) and (max-width: 1279px){
+    .footer{
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    .footer__qr{
+        display: none;
+    }
+    .footer__icons-box{
+        margin-top: 56px;
+    }
+}
+@media (max-width: 719px){
+    .footer{
+        padding-top: 56px;
+        padding-left: 20px;
+        min-width: 395px;
+    }
+    .footer__qr{
+        display: none;
+    }
+    .footer__birthdays-container{
+        grid-template-columns: 272px;
+        gap: 16px 18px;
+    }
+    .footer__birthdays-container > :nth-child(2n){
+        display: none;
+    }
+    .footer__icons-box{
+        margin-top: 40px;
+    }
+    .birthdays-container__birthday{
+        width:auto;
+    }
+}
